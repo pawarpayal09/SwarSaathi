@@ -27,7 +27,7 @@ predicts one of three categories from the supplied dataset: **Healthy**, **At-ri
    (`python -m src.train_models --skip-tuning` is faster.) A trained model is already included.
 5. Start the app:
    ```powershell
-   streamlit run app.py
+   python -m streamlit run app.py
    ```
    Your browser opens at http://localhost:8501.
 
@@ -175,3 +175,10 @@ SwarSaathi/
 * Tuned CV scores are the best of several tries, so they are slightly optimistic.
 
 
+## Team:
+* Bhakti Gharat (MC2520)
+* Payal Pawar (MC2546) 
+* Diti Prajapati (MC2549)
+
+## Guide:
+* Ms. Shaesta Mujawar
