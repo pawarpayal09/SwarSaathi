@@ -1,0 +1,11 @@
+age,education_years,chronic_conditions,memory_score,bmi,blood_pressure,gender,income_level,physical_activity,smoking_status,diet_quality,alcohol_consumption,social_engagement
+65,9,2,91.93984634,30.6,151,Male,High,High,Never,Good,None,Low
+80,2,0,64.81454706,26.7,128,Male,Medium,Moderate,Former,Poor,None,Moderate
+44,0,3,57.09636693,31.0,112,Female,Low,High,Never,Poor,Moderate,High
+82,1,0,92.73078006,25.4,140,Male,Medium,Low,Never,Good,None,Moderate
+53,16,1,83.78218607,23.3,126,Female,High,High,Never,Average,Moderate,Moderate
+45,3,0,65.95079743,23.3,123,Female,Medium,Low,Former,Good,None,High
+54,19,1,69.72761428,22.3,157,Male,Low,High,Never,Good,None,High
+68,1,4,70.92294564,34.6,152,Female,Low,Moderate,Never,Good,None,Moderate
+42,19,3,66.92156898,20.0,139,Female,Low,Moderate,Never,Average,None,Moderate
+48,17,2,82.18408476,25.4,147,Female,Medium,Moderate,Current,Average,None,High

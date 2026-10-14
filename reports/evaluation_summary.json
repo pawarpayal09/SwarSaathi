@@ -1,0 +1,213 @@
+{
+  "final_model": "Soft Voting Ensemble (tuned)",
+  "selection_metric": "cv_macro_f1 (mean 5-fold stratified macro-F1 on training data)",
+  "selected_cv_macro_f1": 0.7401555885344914,
+  "selected_params": {
+    "lr__C": 10,
+    "svm__C": 20
+  },
+  "test_metrics": {
+    "test_accuracy": 0.9180327868852459,
+    "test_balanced_accuracy": 0.8146775841870436,
+    "test_macro_precision": 0.937120149602618,
+    "test_macro_recall": 0.8146775841870436,
+    "test_macro_f1": 0.8586576914857892,
+    "test_weighted_f1": 0.9183572795352963
+  },
+  "per_class_test_metrics": [
+    {
+      "class": "At-risk",
+      "precision": 0.8548387096774194,
+      "recall": 0.9244186046511628,
+      "f1": 0.888268156424581,
+      "support": 172
+    },
+    {
+      "class": "Frail",
+      "precision": 0.9565217391304348,
+      "recall": 0.9196141479099679,
+      "f1": 0.9377049180327869,
+      "support": 311
+    },
+    {
+      "class": "Healthy",
+      "precision": 1.0,
+      "recall": 0.6,
+      "f1": 0.75,
+      "support": 5
+    }
+  ],
+  "per_class_cv_metrics_training_data": {
+    "At-risk": {
+      "precision": 0.8431911966987621,
+      "recall": 0.8896952104499274,
+      "f1-score": 0.865819209039548,
+      "support": 689.0
+    },
+    "Frail": {
+      "precision": 0.9445822994210091,
+      "recall": 0.9172690763052209,
+      "f1-score": 0.9307253463732681,
+      "support": 1245.0
+    },
+    "Healthy": {
+      "precision": 0.4,
+      "recall": 0.35294117647058826,
+      "f1-score": 0.375,
+      "support": 17.0
+    }
+  },
+  "split": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "train_rows": 1951,
+    "test_rows": 488,
+    "train_class_counts": {
+      "Frail": 1245,
+      "At-risk": 689,
+      "Healthy": 17
+    },
+    "test_class_counts": {
+      "Frail": 311,
+      "At-risk": 172,
+      "Healthy": 5
+    },
+    "test_rows_identical_to_training_rows": 0
+  },
+  "data_audit": {
+    "rows": 7488,
+    "columns": 14,
+    "exact_duplicate_rows": 5049,
+    "unique_rows": 2439,
+    "rows_duplicated_on_features_only": 5049,
+    "feature_combinations_with_conflicting_targets": 0,
+    "missing_values_per_column": {},
+    "target_distribution_original": {
+      "At-risk": 2496,
+      "Healthy": 2496,
+      "Frail": 2496
+    },
+    "target_distribution_after_dedup": {
+      "Frail": 1556,
+      "At-risk": 861,
+      "Healthy": 22
+    },
+    "categories": {
+      "gender": [
+        "Female",
+        "Male"
+      ],
+      "income_level": [
+        "High",
+        "Low",
+        "Medium"
+      ],
+      "physical_activity": [
+        "High",
+        "Low",
+        "Moderate"
+      ],
+      "smoking_status": [
+        "Current",
+        "Former",
+        "Never"
+      ],
+      "diet_quality": [
+        "Average",
+        "Good",
+        "Poor"
+      ],
+      "alcohol_consumption": [
+        "Heavy",
+        "Moderate",
+        "None"
+      ],
+      "social_engagement": [
+        "High",
+        "Low",
+        "Moderate"
+      ]
+    },
+    "observed_ranges": {
+      "age": [
+        40.0,
+        89.0
+      ],
+      "education_years": [
+        0.0,
+        20.0
+      ],
+      "chronic_conditions": [
+        0.0,
+        8.0
+      ],
+      "memory_score": [
+        40.58420753,
+        100.0
+      ],
+      "bmi": [
+        9.1,
+        38.5
+      ],
+      "blood_pressure": [
+        100.0,
+        179.0
+      ]
+    }
+  },
+  "cleaning_log": {
+    "deduplication": {
+      "rows_before": 7488,
+      "rows_after": 2439,
+      "rows_removed": 5049
+    },
+    "invalid_values": {
+      "bmi": {
+        "count": 1,
+        "values": [
+          9.1
+        ]
+      }
+    }
+  },
+  "out_of_fold_metrics_all_unique_rows": {
+    "accuracy": 0.9093890938909389,
+    "balanced_accuracy": 0.8481613289908481,
+    "macro_f1": 0.8344129865087778,
+    "weighted_f1": 0.9100603622879778
+  },
+  "out_of_fold_per_class": [
+    {
+      "class": "Healthy",
+      "precision": 0.6666666666666666,
+      "recall": 0.7272727272727273,
+      "f1": 0.6956521739130435,
+      "support": 22
+    },
+    {
+      "class": "At-risk",
+      "precision": 0.8516483516483516,
+      "recall": 0.9001161440185831,
+      "f1": 0.8752117447769622,
+      "support": 861
+    },
+    {
+      "class": "Frail",
+      "precision": 0.948172757475083,
+      "recall": 0.9170951156812339,
+      "f1": 0.932375040836328,
+      "support": 1556
+    }
+  ],
+  "cv_scheme": "3x repeated stratified 5-fold",
+  "model_reasons": {
+    "Logistic Regression": "Simple, fast linear baseline; coefficients are easy to explain.",
+    "Decision Tree": "Learns easy if-then rules; very readable but can overfit.",
+    "Random Forest": "Many trees voting together; handles mixed features and is robust to noise.",
+    "SVM (RBF)": "Finds a smooth boundary between classes; works well on small, scaled data.",
+    "K-Nearest Neighbors": "Classifies by similar people in the data; easy to understand.",
+    "Gradient Boosting": "Builds trees one after another, each fixing earlier mistakes; strong on tables.",
+    "Soft Voting Ensemble": "Averages SVM + Logistic Regression + Gradient Boosting so their different errors partly cancel out; usually the most stable choice on small data."
+  },
+  "tuning_performed": true
+}

@@ -1,0 +1,12 @@
+model,stage,cv_macro_f1,cv_macro_f1_std,test_accuracy,test_balanced_accuracy,test_macro_precision,test_macro_recall,test_macro_f1,test_weighted_f1,training_seconds,best_params
+Soft Voting Ensemble,tuned,0.7402,0.0834,0.9180,0.8147,0.9371,0.8147,0.8587,0.9184,50.5877,"{""lr__C"": 10, ""svm__C"": 20}"
+SVM (RBF),tuned,0.7361,0.0795,0.8811,0.8515,0.7064,0.8515,0.7512,0.8845,45.8758,"{""C"": 20, ""gamma"": 0.01}"
+Soft Voting Ensemble,baseline,0.7361,0.0842,0.9180,0.8138,0.8551,0.8138,0.8313,0.9184,2.4511,
+Logistic Regression,tuned,0.6999,0.0524,0.8607,0.8364,0.6552,0.8364,0.6938,0.8684,2.6571,"{""C"": 100}"
+SVM (RBF),baseline,0.6888,0.0997,0.8914,0.8603,0.7785,0.8603,0.8125,0.8928,1.0208,
+Logistic Regression,baseline,0.6859,0.0426,0.8504,0.8267,0.6325,0.8267,0.6599,0.8634,0.2823,
+Gradient Boosting,baseline,0.6573,0.0597,0.9467,0.7658,0.9598,0.7658,0.8199,0.9457,2.9981,
+Random Forest,baseline,0.5884,0.0112,0.8873,0.5802,0.5916,0.5802,0.5842,0.8806,1.4121,
+K-Nearest Neighbors,baseline,0.5539,0.0672,0.7910,0.5125,0.5161,0.5125,0.5136,0.7852,0.0187,
+Decision Tree,baseline,0.5319,0.0480,0.7869,0.5846,0.6238,0.5846,0.5985,0.7868,0.1551,
+Majority-class baseline,reference,0.2597,0.0002,0.6373,0.3333,0.2124,0.3333,0.2595,0.4961,0.0446,

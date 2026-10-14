@@ -1,0 +1,10 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {"name": "SwarSaathi: run Streamlit app", "type": "debugpy", "request": "launch",
+     "module": "streamlit", "args": ["run", "app.py"], "cwd": "${workspaceFolder}",
+     "console": "integratedTerminal"},
+    {"name": "SwarSaathi: train models", "type": "debugpy", "request": "launch",
+     "module": "src.train_models", "cwd": "${workspaceFolder}", "console": "integratedTerminal"}
+  ]
+}

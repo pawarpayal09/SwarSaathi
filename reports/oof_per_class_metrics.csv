@@ -1,0 +1,4 @@
+class,precision,recall,f1,support
+Healthy,0.6667,0.7273,0.6957,22
+At-risk,0.8516,0.9001,0.8752,861
+Frail,0.9482,0.9171,0.9324,1556

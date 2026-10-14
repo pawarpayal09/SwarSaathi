@@ -1,0 +1,14 @@
+feature,importance_mean,importance_std
+memory_score,0.2177,0.0420
+chronic_conditions,0.2004,0.0683
+smoking_status,0.1890,0.0587
+income_level,0.1742,0.0435
+social_engagement,0.1518,0.0246
+education_years,0.1458,0.0523
+physical_activity,0.1201,0.0269
+diet_quality,0.1139,0.0812
+age,0.1099,0.0332
+bmi,0.0849,0.0547
+alcohol_consumption,0.0467,0.0224
+blood_pressure,0.0029,0.0062
+gender,0.0004,0.0015
