@@ -112,3 +112,12 @@ Folder or file with What it holds -
 2. In the terminal: `py -m venv .venv`, then `.\.venv\Scripts\Activate.ps1`, then `python -m pip install -r requirements.txt`.
 3. Optional re-train: `python -m src.train_models`.
 4. Start: `python -m streamlit run app.py` (opens at http://localhost:8501).
+
+
+## Team:
+* Bhakti Gharat (MC2520)
+* Payal Pawar (MC2546) 
+* Diti Prajapati (MC2549)
+
+## Guide:
+* Ms. Shaesta Mujawar

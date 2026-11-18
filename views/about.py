@@ -12,7 +12,7 @@ with c1:
 with c2:
     card("ML workflow", "Audit → de-duplicate → stratified split → repeated cross-validation → grid-search "
          "tuning → selection by CV macro-F1 → out-of-fold evaluation → saved pipeline.", "🔁")
-st.subheader("Limitations (please read)")
+st.subheader("Limitations")
 st.markdown("""
 - The dataset's origin is **unverified**; it must not be described as real clinical data.
 - After removing duplicates only **22 Healthy** records remain, so Healthy-class results are unreliable.

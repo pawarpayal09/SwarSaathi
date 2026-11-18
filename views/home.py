@@ -29,16 +29,13 @@ with c1: card("Individual assessment", "Enter a profile and get a prediction, pr
               "the main influencing factors and a downloadable PDF report.", "🩺")
 with c2: card("What-if simulator", "Change lifestyle factors like activity, diet or smoking and see how "
               "the model's estimate moves.", "🔬")
-with c3: card("Batch prediction", "Upload a CSV with many people, validate it automatically and "
-              "download all predictions at once.", "📂")
+
 st.write("")
 c1, c2, c3 = st.columns(3)
 with c1: card("Model insights", "Compare 7 algorithms, see confusion matrices, feature importance and "
               "honest out-of-fold results.", "📊")
 with c2: card("Data explorer", "Interactive charts of the dataset: distributions, group comparisons "
               "and correlations.", "🔎")
-with c3: card("Transparent limitations", "Clear notes on duplicates, the tiny Healthy class and why the "
-              "results are a demonstration.", "⚖️")
 
 st.write("")
 st.subheader("How it works")
